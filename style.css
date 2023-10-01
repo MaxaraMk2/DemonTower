@@ -1,0 +1,84 @@
+:root{
+    --gameWidth: 400px;
+    --gameHeight: 400px;
+}
+
+#gameBox{
+    height: var(--gameHeight);
+    margin-top: var(--gameMarginTop);
+    margin-bottom: var(--gameMarginBottom);
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#mapContainer{
+    width: fit-content;
+    margin: auto
+}
+
+#startButton{
+    height: var(--gameHeight);
+    width: var(--buttonWidth);
+    color: white;
+    background-color: #404040;
+    border: none;
+    font-size: 60px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.sidebar{
+    display:inline-block;
+    background-color: 'black';
+    color: 'white';
+    vertical-align: 'top';
+    width: var(--sidebarWidth);
+    height: var(--sidebarHeight);
+}
+
+@media only screen and (max-height: 590px) and (max-width: 810px){
+    #gameBox{
+        height: var(--gameHeight);
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+}
+
+.moveButton{
+    height: 50px;
+    width: 50px;
+    background-color: gray;
+    border: none;
+    border-radius: 0%;
+    opacity: 50%;
+}
+
+.moveButton:hover{
+    opacity: 100%;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+td {
+    padding: 0px
+}
+
+.mobileControls{
+   display: float; 
+   position: fixed;
+   width: 150px;
+   height: 150px;
+}
+
+.move{
+    bottom: 5%;
+    left: 2%
+}
+
+.act{
+    bottom: 5%;
+    right: 2%
+ }

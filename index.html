@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initital-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<html style="background-color:black;color:white">
+    <script src="main.js"></script>
+    <script src='tiles.js'></script>
+
+    <body style="text-align: center; ">
+        <div id="gameBox">
+            <button id="startButton" style="display: none;"></button>
+            <div id="mapContainer">
+            </div>
+        </div>
+    <div id="activeForMobile" style="display: none;">
+        <div class="mobileControls move">
+            <table>
+                <tr>
+                    <td></td>
+                    <td><button class="moveButton" key="w">W</button></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><button class="moveButton" key="a">A</button></td>
+                    <td></td>
+                    <td><button class="moveButton" key="d">D</button></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><button class="moveButton" key="s">S</button></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+        
+        <div class="mobileControls act">
+            <button class="moveButton" key='e'style="transform:translateY(50px)">E</button>
+        </div>
+    </div>
+    </body>
+
+</html>
